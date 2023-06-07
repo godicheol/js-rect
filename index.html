@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index.html</title>
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+</head>
+
+<body>
+  <script src="./index.js"></script>
+  <script>
+    var { cover, contain, into, rotate } = jsRect;
+
+    // 100 x 200
+    var sw = 100;
+    var sh = 200;
+
+    // 1000 x 1000
+    var dw = 1000;
+    var dh = 1000;
+
+    var deg = 45;
+
+    var res1 = cover(sw, sh, dw, dh);
+    var res2 = contain(sw, sh, dw, dh);
+    var res3 = into(sw, sh, dw, dh);
+    var res4 = into(dw, dh, sw, sh);
+    var res5 = rotate(sw, sh, 45);
+
+    console.log("cover:",res1);
+    console.log("contain:",res2);
+    console.log("into:",res3);
+    console.log("into:",res4);
+    console.log("rotate:",res5);
+  </script>
+</body>
+
+</html>
