@@ -15,9 +15,9 @@ var dh = 1000;
 
 var deg = 45;
 
-cover(sw, sh, dw, dh); // {width: 1000, height: 2000}
-contain(sw, sh, dw, dh); // {width: 500, height: 1000}
-into(sw, sh, dw, dh, 0, 0); // {width: 500, height: 1000}
-into(dw, dh, sw, sh, 0, 0); // {width: 100, height: 100}
-rotate(sw, sh, deg); // {width: 212.13203435596427, height: 212.13203435596427}
+jsRect.cover(sw, sh, dw, dh); // {width: 1000, height: 2000}
+jsRect.contain(sw, sh, dw, dh); // {width: 500, height: 1000}
+jsRect.into(sw, sh, dw, dh, 0, 0); // {width: 500, height: 1000}
+jsRect.into(dw, dh, sw, sh, 0, 0); // {width: 100, height: 100}
+jsRect.rotate(sw, sh, deg); // {width: 212.13203435596427, height: 212.13203435596427}
 ```
