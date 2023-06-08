@@ -62,8 +62,8 @@
       mnw = mnh * ar;
     }
     return {
-      width: Math.max(mxw, Math.min(mnw, sw)),
-      height: Math.max(mxh, Math.min(mnh, sh))
+      width: Math.min(mxw, Math.max(mnw, sw)),
+      height: Math.min(mxh, Math.max(mnh, sh))
     }
   }
 
