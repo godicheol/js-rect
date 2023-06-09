@@ -43,7 +43,7 @@
     }
   }
 
-  function into(sw, sh, mxw, mxh, mnw, mnh) {
+  function inside(sw, sh, mxw, mxh, mnw, mnh) {
     var ar = sw / sh;
     if (!mnw) {
       mnw = 0;
@@ -86,7 +86,7 @@
   return {
     cover: cover,
     contain: contain,
-    into: into,
+    inside: inside,
     rotate: rotate,
   }
 });

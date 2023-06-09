@@ -11,7 +11,7 @@
 <body>
   <script src="./index.js"></script>
   <script>
-    var { cover, contain, into, rotate } = jsRect;
+    var { cover, contain, inside, rotate } = jsRect;
 
     // 100 x 200
     var sw = 100;
@@ -25,14 +25,14 @@
 
     var res1 = cover(sw, sh, dw, dh);
     var res2 = contain(sw, sh, dw, dh);
-    var res3 = into(sw, sh, dw, dh);
-    var res4 = into(dw, dh, sw, sh);
+    var res3 = inside(sw, sh, dw, dh);
+    var res4 = inside(dw, dh, sw, sh);
     var res5 = rotate(sw, sh, 45);
 
     console.log("cover:",res1);
     console.log("contain:",res2);
-    console.log("into:",res3);
-    console.log("into:",res4);
+    console.log("inside:",res3);
+    console.log("inside:",res4);
     console.log("rotate:",res5);
   </script>
 </body>
